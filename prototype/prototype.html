@@ -3,106 +3,98 @@
 <head>
 	<meta charset="utf-8">
 	<title>Protótipo ContaAzul</title>
-	<link rel="stylesheet" type="text/css" href="css/prototype.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.css">
-	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/prototype.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.css"/>
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
 	<header>
 		<div class="main">
-			<div class="container">
-				<h1>
-					<img class="brand" src="../images/logo-ca.png">
-				</h1>
+			<div class="header-logo">
+				<img class="brand" src="../images/logo-ca.png"/>
 			</div>
-		</div>
+		</div>	
 	</header>
-	<section>
 		<div class="main">
-			<div class="row">
-				<div class="container">
-					<ul class="pag-list">
-						<li><a href="#">Início	</a><span class="divider">></span></li>
-						<li><a href="#">Conta Bancária	</a><span class="divider">></span></li>
-						<li>Nova</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<article>
-		<div class="main">
-			<div class="conteudo">
-				<div class="conteudo-principal">
-					<div class="container-conteudo">
-						<div class="cabecalho-conteudo">
-							<h3>CONTA BANCÁRIA</h3>	
-						</div>
-						<div class="corpo-conteudo">
-							<div class="row">
-								<div class="col-md-4">
-									<h5>Nome do Banco</h5>
-									<form>
-										<input class="form-control" type="text" name="nome_do_banco" placeholder="Digite aqui o nome do banco">
-									</form>
-								</div>
-								<div class="col-md-6 radio-options">
-									<h5>Tipo de conta</h5>
-									<div class="tipo-pessoa">
-										<div class="pessoa-fisica">
-											<input type="radio" name="TipoPessoa" id="PessoaFisica" value="opcao1">
-											<label for="PessoaFisica" class="radio-inline">Pessoa Física</label>
-										</div>
-										<div class="pessoa-juridica">
-											<input type="radio" name="TipoPessoa" id="PessoaJuridica" value="opcao2">
-											<label for="PessoaJuridica" class="radio-inline">Pessoa Jurídica</label>
+			<ul class="pag-list">
+				<li><a href="#">Início	</a>&rsaquo;</li>
+				<li><a href="#">Conta Bancária	</a>&rsaquo;</li>
+				<li>Nova</li>
+			</ul>
+		<article>
+			<div class="main">
+				<div class="content">
+					<div class="main-content">
+						<div class="container-content">
+							<div class="header-content">
+								<h3>CONTA BANCÁRIA</h3>	
+							</div>
+							<div class="body-content">
+								<div class="section">
+									<div class="bank-name">
+										<label class="title">Nome do Banco</label>
+										<form>
+											<input class="bankname-input" type="text" id="BankName" name="BankName" placeholder="Digite aqui o nome do banco">
+										</form>
+									</div>
+									<div class="radio-options">
+										<label class="title">Tipo de conta</label>
+										<div class="person-type">
+											<div class="natural-person">
+												<input type="radio" name="PersonType" id="NaturalPerson" value="opcao1">
+												<label for="NaturalPerson" class="radio-inline">Pessoa Física</label>
+											</div>
+											<div class="legal-entity">
+												<input type="radio" name="PersonType" id="LegalEntity" value="opcao2">
+												<label for="LegalEntity" class="radio-inline">Pessoa Jurídica</label>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-8">
-									<h5>Descrição</h5>
-									<form>
-										<input class="form-control" type="text" name="nome_do_banco" placeholder="Digite aqui uma curta descrição para o banco">
-									</form>											
+								<div class="section">
+									<div class="description">
+										<label class="title">Descrição</label>
+										<form>
+											<input class="description-input" type="text" id="BankDescription" name="BankDescription" placeholder="Digite aqui uma curta descrição para o banco">
+										</form>											
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="corpo-conteudo">
-							<div class="col-md-12">
-								<div class="row">
-									<h5>Você deve optar por definir um saldo inicial. Este valor aparecerá como seu primeiro lançamento.</h5>
+							<div class="body-content">
+									<div class="section-title-balance">
+										<label class="title">Você deve optar por definir um saldo inicial. Este valor aparecerá como seu primeiro lançamento.</label>
+									</div>
+								<div class="section">
+									<div class="balance">
+										<label class="title">Saldo</label>
+										<form>
+											<input class="balance-input" type="text" id="OpeningBalance" name="OpeningBalance" placeholder="Informe aqui o valor do saldo inicial">
+										</form>
+									</div>
+									<div class="date">
+										<label class="title">Data</label>
+										<form>
+											<input type="text" class="date-input" id="DateOpeningBalance" name="DateOpeningBalance" placeholder="Informe aqui a data do saldo inicial">
+										</form>
+									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-md-5">
-									<h5>Saldo</h5>
-									<form>
-										<input class="form-control" type="text" name="nome_do_banco" placeholder="Informe aqui o valor do saldo inicial">
-									</form>
-								</div>
-								<div class="col-md-5">
-									<h5>Data</h5>
-									<form>
-										<input type="text" class="form-control" name="nome_do_banco" placeholder="Informe aqui a data do saldo inicial">
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>	
+						</div>	
+					</div>
 				</div>
-			</div>
-			<div class="botoes">
-				<a href="#" class="btn btn-default btn-left">Cancelar</a>
-				<a href="#" class="btn btn-success btn-save">Salvar</a>
-				<a href="#" class="btn btn-default btn-right">Salvar esta conta e Adicionar outra</a>
+				<div class="botoes">
+					<a href="#" type="button" class="btn btn-default btn-left">Cancelar</a>
+					<a href="#" type="submit" class="btn btn-success btn-save">Salvar</a>
+					<a href="#" type="submit" class="btn btn-default btn-right">Salvar esta conta e Adicionar outra</a>
+				</div>
 			</div>
 		</div>
 	</article>
 	<footer>
 		<div class="main">
-			<h3><img src="../images/logo-ca-footer.png"></h3>
+			<div class="footer-logo">
+				<img src="../images/logo-ca-footer.png"/>
+			</div>	
 		</div>
 	</footer>
 </body>

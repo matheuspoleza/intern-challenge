@@ -1,11 +1,9 @@
 * {
-	font-family: 'proxima-nova';
+	font-family: 'proxima-nova', sans-serif;
 }
 
 html, body {
 	width: 100%;
-	position: relative;
-	font-family: 'proxima-nova', sans-serif;
 }
 
 article {
@@ -13,80 +11,76 @@ article {
 	background-color: #fcfdfe;
 }
 
+form {
+	margin-top: 15px;
+}
 
 header {
-	z-index: 1;
 	width: 100%;
 	height: 50px;
 	background-color: #2687e9;
 }
 
-form {
-	margin-top: 15px;
-}
-
-input {
-	border: 1px solid #c9d3dd;
+input[type="text"], input[type="submit"], input[type="button"] {
+	border: 2px solid #c9d3dd;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	color: #395a7a;
 	padding: 4px 6px;
+	height: 40px;
+}
+
+label.title{
+	font-weight: normal;
+}
+
+.description-input {
+	width: 540px;
+}
+
+.bankname-input, .balance-input, .date-input {
 	width: 300px;
-}
-
-input[type="radio"] {
-	display: inline;
-}
-
-li a {
-	font-size: 13px;
-}
-
-li span {
-	font-size: 10px;
-	margin-right: 3px;
 }
 
 footer {
 	width: 100%;
-	margin-top: 100px;
+	margin-top: 120px;
 	margin-bottom: 200px;
 	border-top: 1px solid #c9d3dd;
 	text-align: center;
 }
 
-.tipo-pessoa {
-	margin-top: 22px;
+.person-type {
+	margin-top: 24px;
 }
 
-.pessoa-fisica input, .pessoa-fisica label, 
-.pessoa-juridica input, .pessoa-juridica label {
+.natural-person input, .natural-person label, 
+.legal-entity input, .legal-entity label {
 	float: left;
 }
 
-.pessoa-fisica input, .pessoa-juridica input {
+.natural-person input, .legal-entity input {
 	width: 22px;
 	padding-right: 0;
 	margin-right: 0;
 }
 
-.pessoa-fisica label, .pessoa-juridica label {
+.natural-person label, .legal-entity label {
 	margin-left: 0;
 	padding-left: 0;
 }
 
-.pessoa-fisica label {
+.natural-person label {
 	margin-right: 70px;
 }
 
-.container-conteudo {
+.container-content {
 	margin-left: 50px;
 	margin-right: 50px;
 }
 
-.corpo-conteudo {
-	display: inline-block;
+.body-content {
 	width: 100%;
 	font-size: 14px;
 	margin-top: 11px;
@@ -94,20 +88,21 @@ footer {
 	border-top: 1px solid #c9d3dd;	
 }
 
-.corpo-conteudo div {
-	margin-bottom: 15px;
+.body-content div {
+	margin-bottom: 25px;
 }
 
-.cabecalho-conteudo {
-	font-family: "ProximaNovaCond";
+.header-content, .header-content h3 {
+	font-family: "ProximaNovaCond", sans-serif;
 	margin-top: 50px;
 	margin-bottom: 30px;
 	clear: left;
-	height: 32px;
+	height: 50px;
 }
 
-.conteudo {
+.content {
 	min-width: 940px;
+	max-width: 940px;
 	z-index: 20;
 	margin: 0;
 	margin-bottom: 40px;
@@ -123,7 +118,7 @@ footer {
 	width: 940px;
 }
 
-.conteudo .conteudo-principal {
+.content .main-content {
   background-color: #fff;
   padding: 10px 20px 20px 20px;
   -webkit-border-radius: 0;
@@ -133,11 +128,32 @@ footer {
   -moz-box-shadow: none;
   box-shadow: none;
   border: 1px solid #c9d3dd;
-  overflow: visible;
+}
+
+.section {
+	height: 90px;
+	width: 100%;
+}
+
+.section-title-balance {
+	height: 14px;
+	width: 100%;
+}
+
+.balance, .date, .bank-name, .radio-options {
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+}
+
+.description {
+	width: 540px;
+	float: left;
+	margin-right: 20px;	
 }
 
 .brand {
-	position: absolute;
+	margin-top: 18px;
 }
 
 .pag-list {
@@ -151,20 +167,31 @@ footer {
 
 .pag-list li {
 	display: inline;
+	margin-left: 3px;
 }
 
-li a {
+.pag-list li a {
 	text-decoration: underline;
 	color: #00BFFF;
 	margin-left: 5px;
 	margin-right: 5px;
+	font-size: 13px;
+}
+
+
+.pag-list li span {
+	font-size: 10px;
+	margin-right: 3px;
 }
 
 .radio-options form {
 	margin-top: 15px;
 }
 
-/* -------------------------------- BOTÕES ----------------------------------------------------*/
+.btn {
+	height: 40px;
+}
+
 .btn-right {
 	float: right;
 	margin-right: 20px;
@@ -181,7 +208,18 @@ li a {
 	width: 150px;
 }
 
-/* -------------------------------- IMPORTAR FONTES --------------------------------------------*/
+.btn:hover, .btn:focus, .btn:active {
+	opacity: 0.75;
+}
+
+.footer-logo {
+	margin-top: 20px;
+}
+
+.header-logo {
+	height: 50px;
+}
+
 @font-face {
  	font-family: 'proxima-nova';                   
  	src: url('../../webfonts/proximanova-regular.otf') format('truetype');
