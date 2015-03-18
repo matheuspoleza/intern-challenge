@@ -184,10 +184,10 @@ li a {
 /* -------------------------------- IMPORTAR FONTES --------------------------------------------*/
 @font-face {
  	font-family: 'proxima-nova';                   
- 	src: url('../fontes/proximanova-regular.otf') format('truetype');
+ 	src: url('../../webfonts/proximanova-regular.otf') format('truetype');
 }
 
 @font-face {
  	font-family: 'ProximaNovaCond';                   
- 	src: url('../fontes/ProximaNovaCond-regular.otf') format('truetype');
+ 	src: url('../../webfonts/ProximaNovaCond-regular.otf') format('truetype');
 }
