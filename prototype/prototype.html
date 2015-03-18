@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Protótipo ContaAzul</title>
+	<link rel="stylesheet" type="text/css" href="css/prototype.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/dist/css/bootstrap.css">
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div class="container">
+				<h1>
+					<img class="brand" src="../images/logo-ca.png">
+				</h1>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="main">
+			<div class="row">
+				<div class="container">
+					<ul class="pag-list">
+						<li><a href="#">Início	</a><span class="divider">></span></li>
+						<li><a href="#">Conta Bancária	</a><span class="divider">></span></li>
+						<li>Nova</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<article>
+		<div class="main">
+			<div class="conteudo">
+				<div class="conteudo-principal">
+					<div class="container-conteudo">
+						<div class="cabecalho-conteudo">
+							<h3>CONTA BANCÁRIA</h3>	
+						</div>
+						<div class="corpo-conteudo">
+							<div class="row">
+								<div class="col-md-4">
+									<h5>Nome do Banco</h5>
+									<form>
+										<input class="form-control" type="text" name="nome_do_banco" placeholder="Digite aqui o nome do banco">
+									</form>
+								</div>
+								<div class="col-md-6 radio-options">
+									<h5>Tipo de conta</h5>
+									<div class="tipo-pessoa">
+										<div class="pessoa-fisica">
+											<input type="radio" name="TipoPessoa" id="PessoaFisica" value="opcao1">
+											<label for="PessoaFisica" class="radio-inline">Pessoa Física</label>
+										</div>
+										<div class="pessoa-juridica">
+											<input type="radio" name="TipoPessoa" id="PessoaJuridica" value="opcao2">
+											<label for="PessoaJuridica" class="radio-inline">Pessoa Jurídica</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-8">
+									<h5>Descrição</h5>
+									<form>
+										<input class="form-control" type="text" name="nome_do_banco" placeholder="Digite aqui uma curta descrição para o banco">
+									</form>											
+								</div>
+							</div>
+						</div>
+						<div class="corpo-conteudo">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>Você deve optar por definir um saldo inicial. Este valor aparecerá como seu primeiro lançamento.</h5>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-5">
+									<h5>Saldo</h5>
+									<form>
+										<input class="form-control" type="text" name="nome_do_banco" placeholder="Informe aqui o valor do saldo inicial">
+									</form>
+								</div>
+								<div class="col-md-5">
+									<h5>Data</h5>
+									<form>
+										<input type="text" class="form-control" name="nome_do_banco" placeholder="Informe aqui a data do saldo inicial">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="botoes">
+				<a href="#" class="btn btn-default btn-left">Cancelar</a>
+				<a href="#" class="btn btn-success btn-save">Salvar</a>
+				<a href="#" class="btn btn-default btn-right">Salvar esta conta e Adicionar outra</a>
+			</div>
+		</div>
+	</article>
+	<footer>
+		<div class="main">
+			<h3><img src="../images/logo-ca-footer.png"></h3>
+		</div>
+	</footer>
+</body>
+</html>

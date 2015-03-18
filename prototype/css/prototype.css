@@ -1,0 +1,193 @@
+* {
+	font-family: 'proxima-nova';
+}
+
+html, body {
+	width: 100%;
+	position: relative;
+	font-family: 'proxima-nova', sans-serif;
+}
+
+article {
+	color: #385a7b;
+	background-color: #fcfdfe;
+}
+
+
+header {
+	z-index: 1;
+	width: 100%;
+	height: 50px;
+	background-color: #2687e9;
+}
+
+form {
+	margin-top: 15px;
+}
+
+input {
+	border: 1px solid #c9d3dd;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #395a7a;
+	padding: 4px 6px;
+	width: 300px;
+}
+
+input[type="radio"] {
+	display: inline;
+}
+
+li a {
+	font-size: 13px;
+}
+
+li span {
+	font-size: 10px;
+	margin-right: 3px;
+}
+
+footer {
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 200px;
+	border-top: 1px solid #c9d3dd;
+	text-align: center;
+}
+
+.tipo-pessoa {
+	margin-top: 22px;
+}
+
+.pessoa-fisica input, .pessoa-fisica label, 
+.pessoa-juridica input, .pessoa-juridica label {
+	float: left;
+}
+
+.pessoa-fisica input, .pessoa-juridica input {
+	width: 22px;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.pessoa-fisica label, .pessoa-juridica label {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.pessoa-fisica label {
+	margin-right: 70px;
+}
+
+.container-conteudo {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.corpo-conteudo {
+	display: inline-block;
+	width: 100%;
+	font-size: 14px;
+	margin-top: 11px;
+	padding: 44px 0 21px 0;
+	border-top: 1px solid #c9d3dd;	
+}
+
+.corpo-conteudo div {
+	margin-bottom: 15px;
+}
+
+.cabecalho-conteudo {
+	font-family: "ProximaNovaCond";
+	margin-top: 50px;
+	margin-bottom: 30px;
+	clear: left;
+	height: 32px;
+}
+
+.conteudo {
+	min-width: 940px;
+	z-index: 20;
+	margin: 0;
+	margin-bottom: 40px;
+	padding: 0;
+	padding-bottom: 1px;
+	clear: left;		
+}
+
+.main {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	width: 940px;
+}
+
+.conteudo .conteudo-principal {
+  background-color: #fff;
+  padding: 10px 20px 20px 20px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #c9d3dd;
+  overflow: visible;
+}
+
+.brand {
+	position: absolute;
+}
+
+.pag-list {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px 0;
+	background: transparent;
+	font-size: 12px;
+}
+
+.pag-list li {
+	display: inline;
+}
+
+li a {
+	text-decoration: underline;
+	color: #00BFFF;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.radio-options form {
+	margin-top: 15px;
+}
+
+/* -------------------------------- BOTÕES ----------------------------------------------------*/
+.btn-right {
+	float: right;
+	margin-right: 20px;
+	width: 300px;
+}
+
+.btn-left {
+	float: left;
+	width: 150px;
+}
+
+.btn-save {
+	float: right;
+	width: 150px;
+}
+
+/* -------------------------------- IMPORTAR FONTES --------------------------------------------*/
+@font-face {
+ 	font-family: 'proxima-nova';                   
+ 	src: url('../fontes/proximanova-regular.otf') format('truetype');
+}
+
+@font-face {
+ 	font-family: 'ProximaNovaCond';                   
+ 	src: url('../fontes/ProximaNovaCond-regular.otf') format('truetype');
+}
