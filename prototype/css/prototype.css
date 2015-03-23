@@ -1,9 +1,16 @@
-* {
-	font-family: 'proxima-nova', sans-serif;
+@font-face {
+ 	font-family: 'proxima-nova';                   
+ 	src: url('../../webfonts/proximanova-regular.otf') format('truetype');
+}
+
+@font-face {
+ 	font-family: 'proxima-nova-cond';                   
+ 	src: url('../../webfonts/ProximaNovaCond-regular.otf') format('truetype');
 }
 
 html, body {
 	width: 100%;
+	font-family: 'proxima-nova', sans-serif;
 }
 
 article {
@@ -23,15 +30,13 @@ header {
 
 input[type="text"], input[type="submit"], input[type="button"] {
 	border: 2px solid #c9d3dd;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 	border-radius: 5px;
 	color: #395a7a;
 	padding: 4px 6px;
 	height: 40px;
 }
 
-label.title{
+.title {
 	font-weight: normal;
 }
 
@@ -43,7 +48,7 @@ label.title{
 	width: 300px;
 }
 
-footer {
+.main-footer {
 	width: 100%;
 	margin-top: 120px;
 	margin-bottom: 200px;
@@ -84,7 +89,7 @@ footer {
 	width: 100%;
 	font-size: 14px;
 	margin-top: 11px;
-	padding: 44px 0 21px 0;
+	padding: 44px 0 21px;
 	border-top: 1px solid #c9d3dd;	
 }
 
@@ -93,11 +98,12 @@ footer {
 }
 
 .header-content, .header-content h3 {
-	font-family: "ProximaNovaCond", sans-serif;
+	font-family: "proxima-nova-cond", sans-serif;
 	margin-top: 50px;
 	margin-bottom: 30px;
 	clear: left;
 	height: 50px;
+	text-transform: uppercase;
 }
 
 .content {
@@ -119,15 +125,15 @@ footer {
 }
 
 .content .main-content {
-  background-color: #fff;
-  padding: 10px 20px 20px 20px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border: 1px solid #c9d3dd;
+	background-color: #fff;
+	padding: 10px 20px 20px 20px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid #c9d3dd;
 }
 
 .section {
@@ -218,14 +224,4 @@ footer {
 
 .header-logo {
 	height: 50px;
-}
-
-@font-face {
- 	font-family: 'proxima-nova';                   
- 	src: url('../../webfonts/proximanova-regular.otf') format('truetype');
-}
-
-@font-face {
- 	font-family: 'ProximaNovaCond';                   
- 	src: url('../../webfonts/ProximaNovaCond-regular.otf') format('truetype');
 }
